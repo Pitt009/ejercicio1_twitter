@@ -5,15 +5,16 @@
     <title>Twitter</title>
   </head>
   <body>
-    <h5>Contador de clicks:</h5>
+    <h5 id=contarclick>Contador de clicks:</h5>
     <h1 align=center>Twitter</h1>
     <section>
 
-      <textarea id=comentario cols="90" rows="9" placeholder="Ingrese Comentario"></textarea>
+      <textarea id=comentario cols="90" rows="9" placeholder="Ingrese Comentario" onkeydown="contar()"></textarea>
       <label>De:</label>
       <input id=autor type="text" placeholder="Autor"/>
+      <label for="" id=contador >0/140</label>
       <button onclick="agregarComentario()">Enviar</button>
-      <input id=contador type="text">
+
     </section>
     <hr>
     <section id=visualizar>
